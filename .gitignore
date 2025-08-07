@@ -45,38 +45,37 @@ pids
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
+# Coverage
+test-coverage/
 coverage/
 *.lcov
-
-# nyc test coverage
 .nyc_output
 
 # Dependency directories
 jspm_packages/
 
-# Optional npm cache directory
+# npm cache
 .npm
 
-# Optional eslint cache
+# eslint cache
 .eslintcache
 
 # Microbundle cache
 .rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
+rts2_cache_cjs/
+rts2_cache_es/
+rts2_cache_umd/
 
-# Optional REPL history
+# REPL history
 .node_repl_history
 
-# Output of 'npm pack'
+# npm pack
 *.tgz
 
-# Yarn Integrity file
+# Yarn integrity
 .yarn-integrity
 
-# parcel-bundler cache (https://parceljs.org/)
+# parcel cache
 .cache
 .parcel-cache
 
@@ -88,11 +87,3 @@ typechain-types/
 
 # Local Hardhat node
 hardhat-node/
-
-# Coverage
-coverage/
-coverage.json
-
-# Temporary folders
-tmp/
-temp/
