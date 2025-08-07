@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom","dom.iterable","esnext"],
     "allowJs": true,
     "target": "ES6",
     "skipLibCheck": true,
@@ -13,15 +13,18 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "plugins": [{ "name": "next" }],
+
+   // ← add this
+   "baseUrl": ".",
+
     "paths": {
-      "@/*": ["./*"]
+     // map @/components/* → ./components/*
+     "@/components/*": ["components/*"],
+     // keep your general alias
+     "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts","**/*.ts","**/*.tsx",".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
