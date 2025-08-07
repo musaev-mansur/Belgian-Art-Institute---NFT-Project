@@ -93,7 +93,7 @@ export function Header() {
 
             <NavigationMenuItem>
               <Link href="/research" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle() + " text-white bg-[#282828] border border-gray-700 rounded-lg"}>Analysis & Research</NavigationMenuLink>
+                <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">Analysis & Research</NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
