@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { ArticleLayout } from "@/components/article-layout"
 import { ImageModal, ImageGalleryItem } from "@/components/image-modal"
 import { PDFModal, PDFGalleryItem } from "@/components/pdf-modal"
 import { BackButton } from "@/components/back-button"

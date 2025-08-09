@@ -10,7 +10,15 @@ const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600"] }
 export const metadata: Metadata = {
   title: "Belgian Art Institute",
   description: "Preserving Artistic Heritage through Scholarship and Technology.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', type: 'image/x-icon' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

@@ -4,6 +4,8 @@
 
 This is a commissioned project for the **Belgian Art Institute**, a prestigious art research and authentication organization. The project represents a digital transformation of traditional art authentication and ownership through blockchain technology.
 
+![NFT Preview](./art.gif)
+
 ## Project Description
 
 The Belgian Art Institute has developed an innovative NFT (Non-Fungible Token) project that fragments masterpieces into 5,555 individual digital pieces. This approach democratizes art ownership while maintaining the integrity and provenance of the original artworks through blockchain technology.
@@ -151,7 +153,8 @@ Each case study includes:
 ## Contact
 
 For more information about this project or the Belgian Art Institute, please visit:
-- **Website**: [Belgian Art Institute](https://belgianartinstitute.com)
+- **Live Website**: [Belgian Art Institute](https://belgianartinstitute.onrender.com)
+- **GitHub Repository**: [Belgian Art Institute NFT Project](https://github.com/Mansur-09595/Belgian-Art-Institute---NFT-Project)
 - **Instagram**: [@belgian.art.institute](https://www.instagram.com/belgian.art.institute)
 - **OpenSea**: [NFT Collection](https://opensea.io/collection/bacon-nft-fragments)
 
