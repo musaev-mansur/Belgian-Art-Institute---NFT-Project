@@ -6,9 +6,10 @@ interface ArticleLayoutProps {
   content: string
   imageUrl?: string
   imageAlt?: string
+  showSignature?: boolean
 }
 
-export function ArticleLayout({ title, content, imageUrl, imageAlt }: ArticleLayoutProps) {
+export function ArticleLayout({ title, content, imageUrl, imageAlt, showSignature }: ArticleLayoutProps) {
   return (
     <div className="container max-w-4xl mx-auto px-6 text-white">
       <article className="prose lg:prose-xl max-w-none bg-[#282828] p-8 md:p-12 rounded-lg shadow-sm">
@@ -25,6 +26,22 @@ export function ArticleLayout({ title, content, imageUrl, imageAlt }: ArticleLay
           </div>
         )}
         <ReactMarkdown>{content}</ReactMarkdown>
+        
+        {showSignature && (
+          <div className="flex justify-end items-end mt-8">
+            <div className="flex items-end gap-3">
+              <div className="relative w-24 h-12">
+                <Image
+                  src="/images/beck.png"
+                  alt="Robert Beck signature"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-lg font-medium text-gray-300">R. Beck</span>
+            </div>
+          </div>
+        )}
       </article>
     </div>
   )

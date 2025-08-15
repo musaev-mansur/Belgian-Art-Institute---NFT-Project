@@ -64,6 +64,9 @@ export function Header() {
               <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg">
+                  <ListItem href="/about/manifesto" title="Web3 Manifesto">
+                    Our mission statement and vision for preserving art through blockchain technology.
+                  </ListItem>
                   <ListItem href="/about/institute" title="About the Institute">
                     Our mission, history, and approach to art scholarship.
                   </ListItem>
@@ -76,7 +79,8 @@ export function Header() {
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
-
+            
+            
             <NavigationMenuItem>
               <NavigationMenuTrigger>Security</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -96,7 +100,17 @@ export function Header() {
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">Analysis & Research</NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link href="/club" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">
+                  Club
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
           </NavigationMenuList>
+
         </NavigationMenu>
 
         {/* Mobile Menu Button */}
@@ -121,6 +135,9 @@ export function Header() {
             <div className="space-y-2">
               <h3 className="font-semibold px-4 py-2">About Us</h3>
               <div className="space-y-1">
+                <MobileMenuItem href="/about/manifesto" onClick={closeMobileMenu}>
+                  Web3 Manifesto
+                </MobileMenuItem>
                 <MobileMenuItem href="/about/institute" onClick={closeMobileMenu}>
                   About the Institute
                 </MobileMenuItem>
@@ -129,6 +146,16 @@ export function Header() {
                 </MobileMenuItem>
                 <MobileMenuItem href="/about/chairman" onClick={closeMobileMenu}>
                   Message from the Chairman
+                </MobileMenuItem>
+              </div>
+            </div>
+
+            {/* Club Section */}
+            <div className="space-y-2">
+              <h3 className="font-semibold px-4 py-2">Community</h3>
+              <div className="space-y-1">
+                <MobileMenuItem href="/club" onClick={closeMobileMenu}>
+                  Friends of the Institute Club
                 </MobileMenuItem>
               </div>
             </div>
@@ -152,6 +179,16 @@ export function Header() {
               <div className="space-y-1">
                 <MobileMenuItem href="/research" onClick={closeMobileMenu}>
                   Analysis & Research
+                </MobileMenuItem>
+              </div>
+            </div>
+
+            {/* Club Section */}
+            <div className="space-y-2">
+              <h3 className="font-semibold px-4 py-2">Community</h3>
+              <div className="space-y-1">
+                <MobileMenuItem href="/club" onClick={closeMobileMenu}>
+                  Club
                 </MobileMenuItem>
               </div>
             </div>

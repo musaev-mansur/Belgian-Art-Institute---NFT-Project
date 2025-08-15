@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram } from "lucide-react"
+import { Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
@@ -17,6 +17,18 @@ export function Footer() {
             <Link href="/security/ethics" className="hover:text-white transition-colors">
               Ethics
             </Link>
+            <Link href="/faq" className="hover:text-white transition-colors">
+              FAQ
+            </Link>
+            <a 
+              href="https://x.com/belgianArtIns" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors flex items-center gap-1"
+            >
+              <Twitter size={16} />
+              <span>X</span>
+            </a>
             <a 
               href="https://www.instagram.com/belgian.art.institute?igsh=MThkZTFieDlwZ3o3Yw%3D%3D" 
               target="_blank" 

@@ -5,19 +5,19 @@ import Image from "next/image"
 const caseStudies = [
   {
     slug: "case-study-one",
-    title: "Attribution of a Lost Masterpiece",
+    title: "Fra Bartolommeo (March 1472 – October 1517)",
     description: "Scientific analysis and provenance research leading to the rediscovery of a key work.",
     imageUrl: "/case-study-one/Fra5.jpg?width=400&height=300",
   },
   {
     slug: "case-study-two",
-    title: "Pigment Analysis of a Post-Impressionist Work",
+    title: "Claude Monet (November 1840 – December 1926)",
     description: "Uncovering the artist's technique through infrared reflectography and chemical analysis.",
     imageUrl: "/case-study-two/Claude Monet 04_page-0001.jpg?width=400&height=300",
   },
   {
     slug: "case-study-three",
-    title: "Conservation of a 19th Century Seascape",
+    title: "Theodore Robinson (June 1852 – April 1896)",
     description: "A delicate restoration process to preserve a fragile canvas for future generations.",
     imageUrl: "/case-study-three/02 Theodore Robinson Report.JPG?width=400&height=300",
   },
