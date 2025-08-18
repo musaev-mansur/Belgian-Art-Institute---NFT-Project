@@ -27,6 +27,15 @@ export default function ClubPage() {
               priority
             />
           </div>
+          <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <Image
+              src="/images/3_logo.png"
+              alt="CLUB DE L'INSTITUT BELGE D'ARTS - Heraldic Crest"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
 
         {/* Main Content */}

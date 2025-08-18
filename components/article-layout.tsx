@@ -29,16 +29,13 @@ export function ArticleLayout({ title, content, imageUrl, imageAlt, showSignatur
         
         {showSignature && (
           <div className="flex justify-end items-end mt-8">
-            <div className="flex items-end gap-3">
-              <div className="relative w-24 h-12">
-                <Image
-                  src="/images/beck.png"
-                  alt="Robert Beck signature"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-lg font-medium text-gray-300">R. Beck</span>
+            <div className="relative w-48 h-28">
+              <Image
+                src="/images/beck.png"
+                alt="Robert Beck signature"
+                fill
+                className="object-contain"
+              />
             </div>
           </div>
         )}

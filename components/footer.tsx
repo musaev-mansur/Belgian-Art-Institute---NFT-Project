@@ -11,14 +11,20 @@ export function Footer() {
             Preserving artistic heritage through scholarship, conservation, and digital innovation.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
-            <Link href="/about/institute" className="hover:text-white transition-colors">
+            {/* <Link href="/about/institute" className="hover:text-white transition-colors">
               About
             </Link>
             <Link href="/security/ethics" className="hover:text-white transition-colors">
               Ethics
+            </Link> */}
+            <Link href="/contact" className="hover:text-white transition-colors">
+              Contact
             </Link>
             <Link href="/faq" className="hover:text-white transition-colors">
               FAQ
+            </Link>
+            <Link href="/secure" className="hover:text-white transition-colors">
+              VIP
             </Link>
             <a 
               href="https://x.com/belgianArtIns" 

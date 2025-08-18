@@ -109,6 +109,15 @@ export function Header() {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
+            {/* <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link href="/secure" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">
+                  VIP Documents
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem> */}
+
+
           </NavigationMenuList>
 
         </NavigationMenu>
@@ -180,6 +189,9 @@ export function Header() {
                 <MobileMenuItem href="/research" onClick={closeMobileMenu}>
                   Analysis & Research
                 </MobileMenuItem>
+                {/* <MobileMenuItem href="/secure" onClick={closeMobileMenu}>
+                  VIP Documents
+                </MobileMenuItem> */}
               </div>
             </div>
 
