@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
+// import { ThemeToggle } from "./theme-toggle"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -60,10 +61,11 @@ export function Header() {
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:block">
           <NavigationMenuList>
+
             <NavigationMenuItem>
               <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg shadow-custom-inset">
                   <ListItem href="/about/manifesto" title="Web3 Manifesto">
                     Our mission statement and vision for preserving art through blockchain technology.
                   </ListItem>
@@ -84,7 +86,7 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Security</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg">
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg shadow-custom-inset">
                   <ListItem href="/security/ethics" title="Ethics & Confidentiality">
                     Our commitment to responsible research and engagement.
                   </ListItem>
@@ -95,10 +97,27 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <Link href="/research" legacyBehavior passHref>
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">Analysis & Research</NavigationMenuLink>
               </Link>
+            </NavigationMenuItem> */}
+
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Analysis & Research</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg shadow-custom-inset">
+                  <ListItem href="/research" title="Research">
+                    Case studies from our internal research archive.
+                  </ListItem>
+                  <ListItem href="/faq" title="FAQ">
+                    Frequently Asked Questions.
+                  </ListItem>
+                  <ListItem href="/secure" title="Reports">
+                    Reports documents
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
@@ -122,8 +141,11 @@ export function Header() {
 
         </NavigationMenu>
 
+        {/* Theme Toggle */}
+        {/* <ThemeToggle /> */}
+        
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           onClick={toggleMobileMenu}
           className="md:hidden p-2 rounded-md hover:bg-gray-700 transition-colors"
           aria-label="Toggle mobile menu"
@@ -133,13 +155,14 @@ export function Header() {
           ) : (
             <Menu size={24} className="text-white" />
           )}
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t border-gray-200 bg-[#212121] text-white">
           <div className="container py-4 space-y-4">
+            
             {/* About Us Section */}
             <div className="space-y-2">
               <h3 className="font-semibold px-4 py-2">About Us</h3>
@@ -189,9 +212,12 @@ export function Header() {
                 <MobileMenuItem href="/research" onClick={closeMobileMenu}>
                   Analysis & Research
                 </MobileMenuItem>
-                {/* <MobileMenuItem href="/secure" onClick={closeMobileMenu}>
-                  VIP Documents
-                </MobileMenuItem> */}
+                <MobileMenuItem href="/secure" onClick={closeMobileMenu}>
+                  Reports Documents
+                </MobileMenuItem>
+                <MobileMenuItem href="/faq" onClick={closeMobileMenu}>
+                  FAQ
+                </MobileMenuItem>
               </div>
             </div>
 

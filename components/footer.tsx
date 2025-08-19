@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Twitter } from "lucide-react"
+import { Instagram, Twitter, MessageCircle } from "lucide-react"
 
 export function Footer() {
   return (
@@ -20,12 +20,12 @@ export function Footer() {
             <Link href="/contact" className="hover:text-white transition-colors">
               Contact
             </Link>
-            <Link href="/faq" className="hover:text-white transition-colors">
+            {/* <Link href="/faq" className="hover:text-white transition-colors">
               FAQ
             </Link>
             <Link href="/secure" className="hover:text-white transition-colors">
-              VIP
-            </Link>
+              Reports
+            </Link> */}
             <a 
               href="https://x.com/belgianArtIns" 
               target="_blank" 
@@ -34,6 +34,15 @@ export function Footer() {
             >
               <Twitter size={16} />
               <span>X</span>
+            </a>
+            <a 
+              href="https://discord.com/users/1407029549023367238" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors flex items-center gap-1"
+            >
+              <MessageCircle size={16} />
+              <span>Discord</span>
             </a>
             <a 
               href="https://www.instagram.com/belgian.art.institute?igsh=MThkZTFieDlwZ3o3Yw%3D%3D" 

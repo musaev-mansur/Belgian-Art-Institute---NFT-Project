@@ -30,12 +30,12 @@ export default function ResearchPage() {
         <h1 className="text-4xl font-light text-white">Analysis & Research</h1>
         <p className="mt-4 text-lg text-white">Selected case studies from our internal research archive.</p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 shadow-custom-inset">
         {caseStudies.map((study) => (
           <Link href={`/research/${study.slug}`} key={study.slug}>
-            <Card className="h-full hover:shadow-lg transition-shadow bg-[#282828] text-white">
+            <Card className="h-full bg-[#282828] text-white shadow-custom-inset">
               <CardHeader>
-                <div className="relative aspect-video mb-4 rounded-md overflow-hidden">
+                <div className="relative aspect-video mb-4 rounded-md overflow-hidden shadow-custom-inset">
                   <Image src={study.imageUrl || "/placeholder.svg"} alt={study.title} fill className="object-cover" />
                 </div>
                 <CardTitle className="font-medium">{study.title}</CardTitle>

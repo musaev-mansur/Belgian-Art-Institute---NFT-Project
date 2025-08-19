@@ -21,10 +21,10 @@ export default function SecurePage() {
 
   const pdfFiles = [
     {
-      src: "/vip/2_Graphological_examination_Bacon.pdf",
-      title: "Graphological examination of Bacon's signature",
+      src: "/vip/Belgian_Royal_Institute_Bacon.pdf",
+      title: "Belgian Royal Institute of Art History",
       description: " ",
-      mobilePreview: "/vip/mobile/2_Graphological_examination_Bacon_mobile.jpg"
+      mobilePreview: "/vip/mobile/Belgian_Royal_Institute_Bacon_mobile.jpg"
     },
     {
       src: "/vip/Appraisal_Bacon.pdf",
@@ -33,17 +33,17 @@ export default function SecurePage() {
       mobilePreview: "/vip/mobile/Appraisal_Bacon_mobile.jpg"
     },
     {
-      src: "/vip/Belgian_Royal_Institute_Bacon.pdf",
-      title: "Belgian Royal Institute of Art History",
-      description: " ",
-      mobilePreview: "/vip/mobile/Belgian_Royal_Institute_Bacon_mobile.jpg"
-    },
-    {
       src: "/vip/Graphological_examination_Bacon.pdf",
       title: "Graphological examination of Bacon's signature",
       description: " ",
       mobilePreview: "/vip/mobile/Graphological_examination_Bacon_mobile.jpg"
-    }
+    },
+    {
+      src: "/vip/Notary_Gummesons_Gallery.pdf",
+      title: "Graphological examination of Bacon's signature",
+      description: " ",
+      mobilePreview: "/vip/mobile/2_Graphological_examination_Bacon_mobile.jpg"
+    },
   ]
 
   return (
@@ -53,7 +53,7 @@ export default function SecurePage() {
     >
       <div className="container max-w-6xl mx-auto px-6">
         <div className="mb-8">
-          <h2 className="text-2xl font-semibold text-white mb-4">VIP Documents</h2>
+          <h2 className="text-2xl font-semibold text-white mb-4">Reports Documents</h2>
           <p className="text-gray-300">
             This site contains classified documents and research that is only accessible to authorized users.
           </p>

@@ -14,6 +14,14 @@ export default function FAQPage() {
           </p>
         </div>
 
+        {/* Introduction */}
+        <div className="bg-[#282828] p-6 rounded-lg mb-8">
+          <h2 className="text-xl font-medium mb-4">Introduction</h2>
+          <p className="text-gray-300 leading-relaxed">
+            This section provides essential answers about the Belgian Art Institute and the BACON NFT project. It covers institutional background, project details, licensing rights, practical guidance for collectors, and the cultural mission behind the initiative.
+          </p>
+        </div>
+
         {/* FAQ Content */}
         <div className="space-y-8">
           {/* About the Institute */}
@@ -24,28 +32,35 @@ export default function FAQPage() {
               <div className="bg-[#282828] p-6 rounded-lg">
                 <h3 className="text-lg font-medium mb-3">1. What is the Belgian Art Institute?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Founded in 2014, the Belgian Art Institute is an independent organization uniting collectors, researchers, and connoisseurs of art. We are dedicated to the study, preservation, and interpretation of artistic heritage, combining classical methodologies with contemporary technologies.
+                  Founded in 2014, the Belgian Art Institute is an independent organization uniting collectors, researchers, and art experts. We focus on the study, preservation, and interpretation of artistic heritage, combining classical methodologies with modern technologies.
                 </p>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">
                 <h3 className="text-lg font-medium mb-3">2. What does the Institute do?</h3>
-                <p className="text-gray-300 leading-relaxed">
-                  The Institute focuses on the attribution of artworks, technical analysis, provenance research, and the re-evaluation of forgotten or misinterpreted works. Special attention is given to late 19th–early 20th century painting, particularly Impressionism.
+                <p className="text-gray-300 leading-relaxed mb-3">Our research focuses on:</p>
+                <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
+                  <li>• attribution of artworks;</li>
+                  <li>• technical analysis and dating;</li>
+                  <li>• provenance studies;</li>
+                  <li>• recontextualization of overlooked or misinterpreted works.</li>
+                </ul>
+                <p className="text-gray-300 leading-relaxed mt-3">
+                  Special attention is devoted to late 19th–early 20th century painting, particularly Impressionism.
                 </p>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">
                 <h3 className="text-lg font-medium mb-3">3. Why do you work with Web3 and NFTs?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  We see Web3 not as a passing trend, but as a culturally necessary extension of our institutional mission. Through blockchain and decentralized infrastructures, we ensure the preservation and authenticity of artworks in the digital age.
+                  We see Web3 not as a trend but as a cultural extension of our mission. Blockchain ensures authenticity and preservation of artworks in the digital age.
                 </p>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">4. Why was your work not public before?</h3>
+                <h3 className="text-lg font-medium mb-3">4. Why was your activity not public before?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  For many years, the Institute operated discreetly, serving private collections and guaranteeing anonymity to their owners. Today, we are opening part of our archives and case studies to a wider audience through educational and digital projects.
+                  For years, the Institute operated confidentially, working with private collections and guaranteeing the anonymity of owners. Today, we open part of our archives and research to the public through educational and digital projects.
                 </p>
               </div>
             </div>
@@ -57,9 +72,9 @@ export default function FAQPage() {
             
             <div className="space-y-6">
               <div className="bg-[#282828] p-6 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">5. What is BACON NFT?</h3>
+                <h3 className="text-lg font-medium mb-3">5. What is the BACON NFT project?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  BACON NFT is a project for the digital tokenization of an authentic self-portrait by Francis Bacon (1909–1992) bearing the dedication "To Ron Francis." The project is carried out by the Belgian Art Institute and combines rigorous scientific verification with Web3 technology.
+                  BACON NFT is the tokenization of an authentic self-portrait by Francis Bacon (1909–1992), inscribed "To Ron Francis". The project is led by the Belgian Art Institute and combines rigorous academic verification with Web3 technology.
                 </p>
               </div>
 
@@ -67,28 +82,27 @@ export default function FAQPage() {
                 <h3 className="text-lg font-medium mb-3">6. What does the collection include?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">The project consists of:</p>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
-                  <li>• 5 collections of 1,111 fragments each (5,555 NFTs in total), each representing one-fifth of the painting. Each collection is named after the dominant color tone of its fragments: White, Grey, Purple, Orange, Blue. The release of these collections will gradually reveal the complete self-portrait.</li>
-                  <li>• 1 unique 1/1 NFT of the dedication inscription (to be raffled after the third collection).</li>
-                  <li>• 1 unique 1/1 NFT of the complete digital version of the painting (to be raffled after the fifth collection).</li>
+                  <li>• 5 collections of 1,111 fragments each (5,555 NFTs total), each representing one-fifth of the painting. Each collection has a color-based title: White, Grey, Purple, Orange, Blue. Together, they gradually reveal the full portrait;</li>
+                  <li>• 1 unique 1/1 NFT with Bacon's handwritten dedication (raffled after the 3rd collection);</li>
+                  <li>• 1 unique 1/1 NFT of the complete digital portrait (raffled after the 5th collection).</li>
                 </ul>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">7. How is the authenticity of the painting verified?</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">The painting has undergone the following expert procedures:</p>
+                <h3 className="text-lg font-medium mb-3">7. How is the painting's authenticity confirmed?</h3>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
                   <li>• Graphological analysis of the inscription (Debora Jaffe, UK Law Society)</li>
-                  <li>• Technical and chemical analysis with dating (Royal Institute for Cultural Heritage, Belgium)</li>
-                  <li>• Radiocarbon analysis (Royal Institute for Cultural Heritage, Belgium)</li>
+                  <li>• Chemical and technical analysis, dating (KIK-IRPA, Belgium)</li>
+                  <li>• Radiocarbon analysis (KIK-IRPA, Belgium)</li>
                   <li>• Documented provenance (Gummesons Gallery, Sweden)</li>
-                  <li>• Independent expert valuation (MAES, Belgium)</li>
+                  <li>• Independent valuation (MAES, Belgium)</li>
                 </ul>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">8. Where is the original painting kept?</h3>
+                <h3 className="text-lg font-medium mb-3">8. Where is the original painting stored?</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  The original Francis Bacon self-portrait is stored in a secure facility in Belgium.
+                  The self-portrait is securely kept in a professional art storage facility in Belgium.
                 </p>
               </div>
             </div>
@@ -96,21 +110,18 @@ export default function FAQPage() {
 
           {/* Rights & Licensing */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">RIGHTS & LICENSING</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-200">RIGHTS AND LICENSING</h2>
             
             <div className="space-y-6">
               <div className="bg-[#282828] p-6 rounded-lg">
-                <h3 className="text-lg font-medium mb-3">9. What does an NFT buyer receive?</h3>
-                <p className="text-gray-300 leading-relaxed mb-3">Each NFT grants the holder:</p>
+                <h3 className="text-lg font-medium mb-3">9. What rights do NFT holders receive?</h3>
+                <p className="text-gray-300 leading-relaxed mb-3">Each NFT grants:</p>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
-                  <li>• Ownership of the token linked to a specific fragment of the painting</li>
-                  <li>• Non-exclusive commercial rights to the image of that fragment (for publications, merchandise, licensing, etc.) with attribution to: BACON NFT, Belgian Art Institute</li>
-                  <li>• The right to personal, non-commercial use of the full painting after it has been fully revealed</li>
-                  <li>• Access to expert documentation: authenticity reports, provenance, analyses</li>
+                  <li>• ownership of the token linked to a specific fragment;</li>
+                  <li>• non-exclusive commercial rights to that fragment's image (merch, publishing, licensing, with attribution: BACON NFT, Belgian Art Institute);</li>
+                  <li>• non-commercial personal use rights for the full image (after all collections are revealed);</li>
+                  <li>• access to expert documentation: analyses, provenance, reports.</li>
                 </ul>
-                <p className="text-gray-300 leading-relaxed mt-3">
-                  Ownership of an NFT does not confer rights to the physical painting. The original remains the property of its current owner and is managed by the Belgian Art Institute within an established legal structure.
-                </p>
               </div>
 
               <div className="bg-[#282828] p-6 rounded-lg">

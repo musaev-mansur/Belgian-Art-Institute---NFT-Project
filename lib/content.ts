@@ -54,7 +54,7 @@ Today, as we begin to open our archive — not only to the public eye, but to th
 
 Impressionism, with all its subtle light and quiet conviction, teaches us that beauty often lives in restraint. We follow that principle still — with humility, with rigor, and with a belief that art, if protected and honored, can live beyond the moment — and beyond the medium.
 
-**Robert Beck**
+Chairman of the Scientific Council
 `
 
 export const ethicsText = `

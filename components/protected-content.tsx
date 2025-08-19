@@ -11,7 +11,7 @@ interface ProtectedContentProps {
   description?: string
 }
 
-export function ProtectedContent({ children, title = "Closed VIP content", description = "Authorization is required to access this section" }: ProtectedContentProps) {
+export function ProtectedContent({ children, title = "Closed Reports content", description = "Authorization is required to access this section" }: ProtectedContentProps) {
   const [authenticated, setAuthenticated] = useState(false)
   const [showLogin, setShowLogin] = useState(false)
   const [isLoading, setIsLoading] = useState(true)

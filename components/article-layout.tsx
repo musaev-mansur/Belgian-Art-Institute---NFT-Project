@@ -12,10 +12,10 @@ interface ArticleLayoutProps {
 export function ArticleLayout({ title, content, imageUrl, imageAlt, showSignature }: ArticleLayoutProps) {
   return (
     <div className="container max-w-4xl mx-auto px-6 text-white">
-      <article className="prose lg:prose-xl max-w-none bg-[#282828] p-8 md:p-12 rounded-lg shadow-sm">
+      <article className="prose lg:prose-xl max-w-none bg-[#282828] p-8 md:p-12 rounded-lg shadow-custom-inset">
         <h1 className="font-light">{title}</h1>
         {imageUrl && imageAlt && (
-          <div className="relative my-8 rounded-md overflow-hidden">
+          <div className="relative my-8 rounded-md overflow-hidden shadow-custom-inset">
             <Image 
               src={imageUrl || "/placeholder.svg"} 
               alt={imageAlt} 

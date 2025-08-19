@@ -92,11 +92,11 @@ export default function CaseStudyOnePage() {
       <div className="mb-6">
         <BackButton href="/research" />
       </div>
-      <article className="bg-[#282828] p-8 md:p-12 rounded-lg shadow-sm text-white">
+      <article className="bg-[#282828] p-8 md:p-12 rounded-lg text-white shadow-custom-inset">
         <h1 className="font-light text-4xl mb-8">Study and Attribution of a Painting by Fra Bartolommeo (1472–1517)</h1>
         
         {/* Combined Gallery */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 mb-12 shadow-custom-inset">
           {images.map((image, index) => (
             <ImageGalleryItem
               key={`image-${index}`}

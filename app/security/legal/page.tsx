@@ -25,7 +25,7 @@ const legalContent = legalText.split("\n\n").map((paragraph, index) => {
 export default function LegalPage() {
   return (
     <div className="container max-w-4xl mx-auto px-6">
-      <article className="bg-[#282828] p-8 md:p-12 rounded-lg shadow-sm">
+      <article className="bg-[#282828] p-8 md:p-12 rounded-lg shadow-custom-inset">
         <h1 className="font-light text-4xl mb-8">Legal & Institutional Framework</h1>
         <div>{legalContent}</div>
       </article>
