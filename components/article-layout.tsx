@@ -11,9 +11,9 @@ interface ArticleLayoutProps {
 
 export function ArticleLayout({ title, content, imageUrl, imageAlt, showSignature }: ArticleLayoutProps) {
   return (
-    <div className="container max-w-4xl mx-auto px-6 text-white">
+    <div className="container max-w-4xl mx-auto px-6 py-8 text-white">
       <article className="prose lg:prose-xl max-w-none bg-[#282828] p-8 md:p-12 rounded-lg shadow-custom-inset">
-        <h1 className="font-light">{title}</h1>
+        <h1 className="font-light mb-8">{title}</h1>
         {imageUrl && imageAlt && (
           <div className="relative my-8 rounded-md overflow-hidden shadow-custom-inset">
             <Image 
@@ -25,10 +25,12 @@ export function ArticleLayout({ title, content, imageUrl, imageAlt, showSignatur
             />
           </div>
         )}
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <div className="prose-content">
+          <ReactMarkdown>{content}</ReactMarkdown>
+        </div>
         
         {showSignature && (
-          <div className="flex justify-end items-end mt-8">
+          <div className="flex justify-end items-end border-gray-600">
             <div className="relative w-48 h-28">
               <Image
                 src="/images/beck.png"

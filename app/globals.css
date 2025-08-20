@@ -2,77 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Anton Font */
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-.caveat-regular {
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 1.8;
-}
-
-/* Увеличенные размеры текста */
-.text-lg {
-  font-size: 1.6rem !important;
-  line-height: 2 !important;
-}
-
-.text-xl {
-  font-size: 2rem !important;
-  line-height: 2.5 !important;
-}
-
-.text-2xl {
-  font-size: 2.5rem !important;
-  line-height: 3 !important;
-}
-
-.text-3xl {
-  font-size: 3rem !important;
-  line-height: 3.5 !important;
-}
-
-.text-4xl {
-  font-size: 4rem !important;
-  line-height: 1.2 !important;
-}
-
-.text-5xl {
-  font-size: 5rem !important;
-  line-height: 1.2 !important;
-}
-
-/* Параграфы */
-p {
-  font-size: 1.5rem !important;
-  line-height: 2.2 !important;
-}
-
-/* Заголовки */
-h1 {
-  font-size: 3.5rem !important;
-  line-height: 1.3 !important;
-}
-
-h2 {
-  font-size: 3rem !important;
-  line-height: 1.4 !important;
-}
-
-h3 {
-  font-size: 2.5rem !important;
-  line-height: 1.5 !important;
-}
-
-/* Списки */
-li {
-  font-size: 1.5rem !important;
-  line-height: 2.2 !important;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -160,6 +89,28 @@ li {
   }
 }
 
+/* Плавные переходы для html элемента */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Базовые настройки для мобильного скролла */
+html, body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Убираем горизонтальный скролл */
+body {
+  overflow-x: hidden;
+}
+
+/* Исправление для iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  html, body {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* Dark Theme (по умолчанию) */
 .dark-theme {
   --bg-primary: #212121;
@@ -188,97 +139,212 @@ li {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Header стили */
 header {
   background-color: var(--bg-header) !important;
   border-bottom: 1px solid var(--border-color) !important;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 /* Специфичные стили для header */
 .sticky.top-0.z-50.w-full.border-b.border-gray-200.bg-\[\#212121\] {
   background-color: var(--bg-header) !important;
   border-bottom-color: var(--border-color) !important;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 /* Main content */
 main {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Footer стили */
 footer {
   background-color: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-top-color 0.3s ease;
 }
 
 /* Hover эффекты */
 .hover\:bg-gray-700:hover {
   background-color: var(--hover-bg);
+  transition: background-color 0.3s ease;
 }
 
 /* Специфичные hover эффекты для header */
 header .hover\:bg-gray-700:hover {
   background-color: var(--hover-bg) !important;
+  transition: background-color 0.3s ease;
 }
 
 /* Текст */
 .text-white {
   color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .text-gray-300 {
   color: var(--text-secondary);
+  transition: color 0.3s ease;
 }
 
 .text-gray-400 {
   color: var(--text-muted);
+  transition: color 0.3s ease;
 }
 
 .text-gray-500 {
   color: var(--text-muted);
+  transition: color 0.3s ease;
 }
 
 /* Специфичные стили для текста в header */
 header .text-white {
   color: var(--text-primary) !important;
+  transition: color 0.3s ease;
 }
 
 header .text-gray-300 {
   color: var(--text-secondary) !important;
+  transition: color 0.3s ease;
 }
 
 header .text-gray-400 {
   color: var(--text-muted) !important;
+  transition: color 0.3s ease;
 }
 
 /* Фон */
 .bg-\[\#212121\] {
   background-color: var(--bg-primary);
+  transition: background-color 0.3s ease;
 }
 
 .bg-\[\#1b1b1b\] {
   background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .bg-\[\#282828\] {
   background-color: var(--bg-header);
+  transition: background-color 0.3s ease;
 }
 
 /* Специфичные стили для header при переключении темы */
 header.dark-theme {
   background-color: #282828 !important;
   border-bottom-color: #404040 !important;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 header.light-theme {
   background-color: #ffffff !important;
   border-bottom-color: #e5e7eb !important;
+  transition: background-color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 /* Стили для backdrop-blur в header */
 .bg-\[\#212121fb\] {
   background-color: var(--bg-header) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Плавные переходы для всех элементов */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Специальные переходы для кнопок и интерактивных элементов */
+button, a, .hover\:bg-gray-700 {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Стили для h3 элементов */
+h3 {
+  @apply text-xl font-semibold text-white mb-4 mt-6;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+/* Дополнительный padding для контейнеров */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Padding для article элементов */
+article {
+  @apply p-6 md:p-8 lg:p-12;
+}
+
+/* Стили для markdown контента */
+.prose h3 {
+  @apply text-xl font-semibold mb-4 mt-6;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.prose p {
+  @apply mb-4;
+  transition: color 0.3s ease;
+}
+
+.prose ul {
+  @apply mb-4 pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+  transition: color 0.3s ease;
+}
+
+/* Стили для prose-content */
+.prose-content h3 {
+  @apply text-xl font-semibold mb-4 mt-6 text-white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.prose-content h2 {
+  @apply text-2xl font-semibold mb-6 mt-8 text-white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.prose-content h1 {
+  @apply text-3xl font-semibold mb-8 mt-10 text-white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.prose-content p {
+  @apply mb-4 text-gray-300 leading-relaxed;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.prose-content ul {
+  @apply mb-6 pl-6;
+}
+
+.prose-content li {
+  @apply mb-2 text-gray-300;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.prose-content strong {
+  @apply font-semibold text-white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.prose-content em {
+  @apply italic text-gray-300;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
 }

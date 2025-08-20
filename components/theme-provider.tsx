@@ -1,11 +1,24 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import {
-  ThemeProvider as NextThemesProvider,
-  type ThemeProviderProps,
-} from 'next-themes'
+import { useEffect, useState } from "react"
+import { useTheme } from "@/hooks/use-theme"
 
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+interface ThemeProviderProps {
+  children: React.ReactNode
+}
+
+export function ThemeProvider({ children }: ThemeProviderProps) {
+  const { isLoaded } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Показываем контент только после монтирования и загрузки темы
+  if (!mounted || !isLoaded) {
+    return null
+  }
+
+  return <>{children}</>
 }

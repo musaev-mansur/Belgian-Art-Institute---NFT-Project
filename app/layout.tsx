@@ -4,6 +4,8 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeScript } from "@/components/theme-script"
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600"] })
 
@@ -28,15 +30,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet" />
-      </head>
-      <body className="caveat-regular bg-gray-50 text-gray-800 min-h-screen flex flex-col dark-theme">
+      <body className={`${inter.className} bg-gray-50 text-gray-800 min-h-screen flex flex-col dark-theme`}>
+        <ThemeScript />
+        <ThemeProvider>
           <Header />
           <main className="flex-1 py-12 bg-[#212121] text-white">{children}</main>
           <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

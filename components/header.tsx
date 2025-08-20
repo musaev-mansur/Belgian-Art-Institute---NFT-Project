@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
-// import { ThemeToggle } from "./theme-toggle"
+import { ThemeToggle } from "./theme-toggle"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -28,7 +28,7 @@ export function Header() {
     setIsMobileMenuOpen(false)
   }
 
-  // Закрытие мобильного меню при клике вне его области и блокировка прокрутки
+  // Закрытие мобильного меню при клике вне его области
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Element
@@ -39,14 +39,10 @@ export function Header() {
 
     if (isMobileMenuOpen) {
       document.addEventListener('click', handleClickOutside)
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = 'unset'
     }
 
     return () => {
       document.removeEventListener('click', handleClickOutside)
-      document.body.style.overflow = 'unset'
     }
   }, [isMobileMenuOpen])
 
@@ -97,27 +93,10 @@ export function Header() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            {/* <NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/research" legacyBehavior passHref>
                 <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">Analysis & Research</NavigationMenuLink>
               </Link>
-            </NavigationMenuItem> */}
-
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Analysis & Research</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1 lg:w-[600px] bg-[#282828] border border-gray-700 rounded-lg shadow-custom-inset">
-                  <ListItem href="/research" title="Research">
-                    Case studies from our internal research archive.
-                  </ListItem>
-                  <ListItem href="/faq" title="FAQ">
-                    Frequently Asked Questions.
-                  </ListItem>
-                  <ListItem href="/secure" title="Reports">
-                    Reports documents
-                  </ListItem>
-                </ul>
-              </NavigationMenuContent>
             </NavigationMenuItem>
 
             <NavigationMenuItem>
@@ -128,13 +107,22 @@ export function Header() {
               </NavigationMenuLink>
             </NavigationMenuItem>
 
-            {/* <NavigationMenuItem>
+            <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link href="/secure" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">
-                  VIP Documents
+                  Reports
                 </Link>
               </NavigationMenuLink>
-            </NavigationMenuItem> */}
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link href="/faq" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-[#282828] px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-700 hover:text-white focus:bg-gray-700 focus:text-white disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-700 data-[state=open]:bg-gray-700 text-white border border-gray-700">
+                  FAQ
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
 
 
           </NavigationMenuList>
@@ -142,10 +130,10 @@ export function Header() {
         </NavigationMenu>
 
         {/* Theme Toggle */}
-        {/* <ThemeToggle /> */}
+        <ThemeToggle />
         
         {/* Mobile Menu Button */}
-        {/* <button
+        <button
           onClick={toggleMobileMenu}
           className="md:hidden p-2 rounded-md hover:bg-gray-700 transition-colors"
           aria-label="Toggle mobile menu"
@@ -155,12 +143,12 @@ export function Header() {
           ) : (
             <Menu size={24} className="text-white" />
           )}
-        </button> */}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-[#212121] text-white">
+        <div className="md:hidden border-t border-gray-200 bg-[#212121] text-white max-h-screen overflow-y-auto">
           <div className="container py-4 space-y-4">
             
             {/* About Us Section */}
@@ -182,12 +170,15 @@ export function Header() {
               </div>
             </div>
 
-            {/* Club Section */}
+            {/* Research Section */}
             <div className="space-y-2">
-              <h3 className="font-semibold px-4 py-2">Community</h3>
+              <h3 className="font-semibold px-4 py-2">Research</h3>
               <div className="space-y-1">
-                <MobileMenuItem href="/club" onClick={closeMobileMenu}>
-                  Friends of the Institute Club
+                <MobileMenuItem href="/research" onClick={closeMobileMenu}>
+                  Analysis & Research
+                </MobileMenuItem>
+                <MobileMenuItem href="/secure" onClick={closeMobileMenu}>
+                  Reports Documents
                 </MobileMenuItem>
               </div>
             </div>
@@ -205,28 +196,22 @@ export function Header() {
               </div>
             </div>
 
-            {/* Analysis & Research */}
-            <div className="space-y-2">
-              <h3 className="font-semibold px-4 py-2">Research</h3>
-              <div className="space-y-1">
-                <MobileMenuItem href="/research" onClick={closeMobileMenu}>
-                  Analysis & Research
-                </MobileMenuItem>
-                <MobileMenuItem href="/secure" onClick={closeMobileMenu}>
-                  Reports Documents
-                </MobileMenuItem>
-                <MobileMenuItem href="/faq" onClick={closeMobileMenu}>
-                  FAQ
-                </MobileMenuItem>
-              </div>
-            </div>
-
-            {/* Club Section */}
+            {/* Community Section */}
             <div className="space-y-2">
               <h3 className="font-semibold px-4 py-2">Community</h3>
               <div className="space-y-1">
                 <MobileMenuItem href="/club" onClick={closeMobileMenu}>
-                  Club
+                  Friends of the Institute Club
+                </MobileMenuItem>
+              </div>
+            </div>
+
+            {/* FAQ Section */}
+            <div className="space-y-2">
+              <h3 className="font-semibold px-4 py-2">Support</h3>
+              <div className="space-y-1">
+                <MobileMenuItem href="/faq" onClick={closeMobileMenu}>
+                  FAQ
                 </MobileMenuItem>
               </div>
             </div>

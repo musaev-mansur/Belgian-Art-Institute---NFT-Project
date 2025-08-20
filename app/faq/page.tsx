@@ -15,7 +15,7 @@ export default function FAQPage() {
         </div>
 
         {/* Introduction */}
-        <div className="bg-[#282828] p-6 rounded-lg mb-8">
+        <div className="bg-[#282828] p-6 rounded-lg mb-8 shadow-custom-inset">
           <h2 className="text-xl font-medium mb-4">Introduction</h2>
           <p className="text-gray-300 leading-relaxed">
             This section provides essential answers about the Belgian Art Institute and the BACON NFT project. It covers institutional background, project details, licensing rights, practical guidance for collectors, and the cultural mission behind the initiative.
@@ -26,17 +26,17 @@ export default function FAQPage() {
         <div className="space-y-8">
           {/* About the Institute */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">ABOUT THE INSTITUTE</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-500">ABOUT THE INSTITUTE</h2>
             
             <div className="space-y-6">
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">1. What is the Belgian Art Institute?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Founded in 2014, the Belgian Art Institute is an independent organization uniting collectors, researchers, and art experts. We focus on the study, preservation, and interpretation of artistic heritage, combining classical methodologies with modern technologies.
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">2. What does the Institute do?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">Our research focuses on:</p>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
@@ -50,14 +50,14 @@ export default function FAQPage() {
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">3. Why do you work with Web3 and NFTs?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   We see Web3 not as a trend but as a cultural extension of our mission. Blockchain ensures authenticity and preservation of artworks in the digital age.
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">4. Why was your activity not public before?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   For years, the Institute operated confidentially, working with private collections and guaranteeing the anonymity of owners. Today, we open part of our archives and research to the public through educational and digital projects.
@@ -68,17 +68,17 @@ export default function FAQPage() {
 
           {/* About the BACON NFT Project */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">ABOUT THE BACON NFT PROJECT</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-500">ABOUT THE BACON NFT PROJECT</h2>
             
             <div className="space-y-6">
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">5. What is the BACON NFT project?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   BACON NFT is the tokenization of an authentic self-portrait by Francis Bacon (1909–1992), inscribed "To Ron Francis". The project is led by the Belgian Art Institute and combines rigorous academic verification with Web3 technology.
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">6. What does the collection include?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">The project consists of:</p>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
@@ -88,7 +88,7 @@ export default function FAQPage() {
                 </ul>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">7. How is the painting's authenticity confirmed?</h3>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
                   <li>• Graphological analysis of the inscription (Debora Jaffe, UK Law Society)</li>
@@ -99,7 +99,7 @@ export default function FAQPage() {
                 </ul>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">8. Where is the original painting stored?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   The self-portrait is securely kept in a professional art storage facility in Belgium.
@@ -110,10 +110,10 @@ export default function FAQPage() {
 
           {/* Rights & Licensing */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">RIGHTS AND LICENSING</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-500">RIGHTS AND LICENSING</h2>
             
             <div className="space-y-6">
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">9. What rights do NFT holders receive?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">Each NFT grants:</p>
                 <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
@@ -124,7 +124,7 @@ export default function FAQPage() {
                 </ul>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">10. Can the image of the entire painting be used?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
                   After the release of all five collections, the painting will be fully revealed. All fragment owners will have:
@@ -138,7 +138,7 @@ export default function FAQPage() {
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">11. Who receives the rights to the unique 1/1 NFTs?</h3>
                 <div className="space-y-4">
                   <div>
@@ -169,7 +169,7 @@ export default function FAQPage() {
                 </div>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">12. Can NFTs be transferred or resold?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
                   Yes, but with temporary restrictions:
@@ -187,9 +187,9 @@ export default function FAQPage() {
 
           {/* Public Release & Participation */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">PUBLIC RELEASE & PARTICIPATION</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-500">PUBLIC RELEASE & PARTICIPATION</h2>
             
-            <div className="bg-[#282828] p-6 rounded-lg mb-6">
+            <div className="bg-[#282828] p-6 rounded-lg mb-6 shadow-custom-inset">
               <h3 className="text-lg font-medium mb-3">Project Timeline:</h3>
               <ul className="text-gray-300 leading-relaxed space-y-2 ml-6">
                 <li>• 4 September 2025 — Launch of the first collection (White) on OpenSea</li>
@@ -205,14 +205,14 @@ export default function FAQPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">13. Where and when can NFTs be purchased?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Digital fragments of the painting are released on OpenSea in stages: each collection of 1,111 fragments is issued at two-week intervals. The first collection will be available from 4 September 2025.
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">14. What recognition do early supporters receive?</h3>
                 <p className="text-gray-300 leading-relaxed mb-3">
                   The Belgian Art Institute does not use pre-sale registration or closed access lists. We deliberately reject whitelist systems, aiming to create an open environment for those who share our values of cultural preservation and interpretation.
@@ -229,17 +229,17 @@ export default function FAQPage() {
 
           {/* Partnership & Contacts */}
           <section>
-            <h2 className="text-2xl font-medium mb-6 text-gray-200">PARTNERSHIP & CONTACTS</h2>
+            <h2 className="text-2xl font-medium mb-6 text-gray-500">PARTNERSHIP & CONTACTS</h2>
             
             <div className="space-y-6">
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">15. Can I submit a painting for authentication?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   Yes. We accept requests from private collectors, galleries, and institutions. Preliminary applications can be submitted through the form on our website.
                 </p>
               </div>
 
-              <div className="bg-[#282828] p-6 rounded-lg">
+              <div className="bg-[#282828] p-6 rounded-lg shadow-custom-inset">
                 <h3 className="text-lg font-medium mb-3">16. How can I contact you?</h3>
                 <p className="text-gray-300 leading-relaxed">
                   📩 contact@belgianart.institute
@@ -252,7 +252,7 @@ export default function FAQPage() {
           </section>
 
           {/* Contact Section */}
-          <section className="bg-[#282828] p-8 rounded-lg text-center">
+          <section className="bg-[#282828] p-8 rounded-lg text-center shadow-custom-inset">
             <h2 className="text-2xl font-medium mb-4">Didn't find your question?</h2>
             <p className="text-gray-300 leading-relaxed">
               Write to us — we will update this section. The Belgian Art Institute operates in a spirit of open dialogue, scholarly transparency, and cultural responsibility.

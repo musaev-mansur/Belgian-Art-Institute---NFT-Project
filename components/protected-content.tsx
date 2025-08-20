@@ -83,7 +83,7 @@ export function ProtectedContent({ children, title = "Closed Reports content", d
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md transition-colors"
+            className="flex items-center gap-2 bg-blue-700 hover:bg-red-600 text-black px-4 py-2 rounded-md transition-colors"
           >
             <LogOut size={16} />
             Logout

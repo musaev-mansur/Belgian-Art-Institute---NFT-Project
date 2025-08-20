@@ -13,11 +13,11 @@ export default function SecurePage() {
     mobilePreview?: string
   } | null>(null)
 
-  const [modalMobileImage, setModalMobileImage] = useState<{
-    src: string
-    alt: string
-    title: string
-  } | null>(null)
+  // const [modalMobileImage, setModalMobileImage] = useState<{
+  //   src: string
+  //   alt: string
+  //   title: string
+  // } | null>(null)
 
   const pdfFiles = [
     {
@@ -48,7 +48,7 @@ export default function SecurePage() {
 
   return (
     <ProtectedContent 
-      title="VIP Documents" 
+      title="Reports Documents" 
       description="These documents are only available to authorized users."
     >
       <div className="container max-w-6xl mx-auto px-6">
@@ -78,15 +78,11 @@ export default function SecurePage() {
                   mobilePreview={pdf.mobilePreview}
                   onClick={() => {
                     // На мобильных устройствах открываем изображение, на десктопе - PDF
-                    if (window.innerWidth < 768 && pdf.mobilePreview) {
-                      setModalMobileImage({
-                        src: pdf.mobilePreview,
-                        alt: pdf.title,
-                        title: pdf.title
-                      })
-                    } else {
-                      setModalPDF(pdf)
-                    }
+                    setModalPDF({
+                      src: pdf.src,
+                      title: pdf.title,
+                      mobilePreview: pdf.mobilePreview
+                    })
                   }}
                 />
               ))}
@@ -103,13 +99,13 @@ export default function SecurePage() {
           />
 
           {/* Mobile Image Modal */}
-          <ImageModal
+          {/* <ImageModal
             isOpen={!!modalMobileImage}
             onClose={() => setModalMobileImage(null)}
             imageSrc={modalMobileImage?.src || ''}
             imageAlt={modalMobileImage?.alt || ''}
             imageTitle={modalMobileImage?.title}
-          />
+          /> */}
         </div>
       </div>
     </ProtectedContent>

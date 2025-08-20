@@ -17,7 +17,7 @@ export function Footer() {
             <Link href="/security/ethics" className="hover:text-white transition-colors">
               Ethics
             </Link> */}
-            <Link href="/contact" className="hover:text-white transition-colors">
+            <Link href="/contact" className="hover:text-gray-600 transition-colors">
               Contact
             </Link>
             {/* <Link href="/faq" className="hover:text-white transition-colors">
@@ -30,7 +30,7 @@ export function Footer() {
               href="https://x.com/belgianArtIns" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-1"
+              className="hover:text-gray-600 transition-colors flex items-center gap-1"
             >
               <Twitter size={16} />
               <span>X</span>
@@ -39,7 +39,7 @@ export function Footer() {
               href="https://discord.com/users/1407029549023367238" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-1"
+              className="hover:text-gray-600 transition-colors flex items-center gap-1"
             >
               <MessageCircle size={16} />
               <span>Discord</span>
@@ -48,7 +48,7 @@ export function Footer() {
               href="https://www.instagram.com/belgian.art.institute?igsh=MThkZTFieDlwZ3o3Yw%3D%3D" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-1"
+              className="hover:text-gray-600 transition-colors flex items-center gap-1"
             >
               <Instagram size={16} />
               <span>Instagram</span>
